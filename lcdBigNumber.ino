@@ -94,6 +94,7 @@ byte bar8[8] =
 
 void setup()
 { 
+  lcd.begin(16, 2);              // inisialisasi kolom dan baris LCD    
   lcd.createChar(1,bar1); // membuat karakter bar1
   lcd.createChar(2,bar2); 
   lcd.createChar(3,bar3);
@@ -104,7 +105,6 @@ void setup()
   lcd.createChar(8,bar8);
   
   
-  lcd.begin(16, 2);              // inisialisasi kolom dan baris LCD
 }
 
 void angka_0(int col)
